@@ -12,7 +12,8 @@
         .qmbox a:active.linkbutton { color: #2b2b2b !important; text-decoration: none !important; font-weight: 500 !important; }
         .qmbox a:visited.linkbutton { color: #2b2b2b !important; text-decoration: none !important; font-weight: 500 !important; }
         .qmbox .nobr {  white-space: nowrap; }
-
+        table{border-collapse:collapse;}
+        table tr{ margin:0; padding:0; }
         @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
             .qmbox body[yahoo] {
                 overflow: hidden;
@@ -77,42 +78,15 @@
 </head>
 <body>
 <div class="mailwrapper" style="font-size: 14px; color: #333; font-smooth: always; -webkit-font-smoothing: antialiased; ">
-    <table style="table-layout: fixed;width: 100%;">
+    <table style="table-layout: fixed;width: 100%; border-collapse:collapse;">
         <tbody><tr><td>
             <table class="mainTable" align="center" style="margin: 0 auto;font-size: inherit; line-height: inherit; text-align: center; border-spacing: 0; border-collapse: collapse; -premailer-cellpadding: 0; -premailer-cellspacing: 0; padding: 0; border: 0;" cellpadding="0" cellspacing="0">
                 <tbody><tr><td class="topPadding" style="font-family: PingFang-SC-Regular, 'Microsoft YaHei', sans-serif, Arial; height: 16px; -premailer-height: 16;" height="16"></td></tr>
                 <tr>
-                    <td class="footer background iPhone_font" colspan="3" style="font-family: PingFang-SC-Regular, 'Microsoft YaHei', sans-serif, Arial; font-smooth: always; -webkit-font-smoothing: antialiased; width: 600px; font-size: 11px; color: #888; text-align: center; background: #2B2929; padding: 0; -webkit-text-size-adjust:100%;" align="center">
-                        <table class="iPhone_font" style="font-family: PingFang-SC-Regular, 'Microsoft YaHei', sans-serif, Arial; font-size: inherit; padding: 0px; border: 0px;">
-                            <tbody><tr>
-                                <td class="content_margin" style="width: 40px;"></td>
-                                <td class="footer_wxcode" style="text-align: center;width: 600px;padding:46px 0 44px 0"><img width="72.5" height="45" src="data:image/png;base64,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" style="width: 72.5px; height: 45px;"></td>
-                                <td class="content_margin" style="width: 40px;"></td>
-                            </tr>
-                            <tr>
-                                <td class="content_margin" style="width: 40px;"></td>
-                                <td class="footer_wxcode" style="text-align: center;width: 600px; line-height: 48px; color: #B9A88B; font-size: 34px; "><span>LBI 培训平台</span></td>
-                                <td class="content_margin" style="width: 40px;"></td>
-                            </tr>
-                            <tr>
-                                <td class="content_margin" style="width: 40px;"></td>
-                                <td class="footer_wxcode" style="text-align: center;width: 600px;"><img width="217" height="6" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVsAAAALCAYAAADRNi6uAAAABGdBTUEAALGPC/xhBQAABDJJREFUaAXtms9uHEUQxqt7ZteGWMI+5GaRVwDF8AIocENIiIg3CD4hAUeEhOBGcuDIG4RISHACGeUJ4oS8QiLfclghH8x6d7r4fTW7YEWOr7uj7ZE8PV311b+velvjmUlWj8rAQBj488GPb1rq3vbS3Uy5eWze/HXr9ufPB5J+TXPDGcgbXn8tfyAMHN2/d6eU82felTtKWWPx8+Ojn+9+NpASapobzkDa8Ppr+QNgIDZUt+9SHt28eCf78Je7N7qZHZulr9//9MufBlBKTXGDGaib7QY3fwil69GB++xR09q773381bOXc5Zed7w5j29c3IhfxtV5ZWDVDNTHCKvuQI1/JQNu87fc/MllG60MtcEmS7/rWe6VjqqyMrBiBlp3193tctPVmE9OTvL+/v5SniaTSU4cu7u7yE7z6alpKlm+di2ls7Oz/Jq9rlLyP9NpRpvTtiWbpjzlJJydp7S1ZencuJ4hsVlmyGP+B5zN54rb4xjmaZ5HGjuwNk/dYpSfNvScrMsh7wp58FOzjrPwnEthZNAcEFdgESTPXbHcNGg7rtELW7C0DjR62RdHVlw41HgXxhx1YsQ3nDmjCHBwWINb2DMU/CzlOIt5KvLrmLh8J3jPStId7oVApvw76kERfh0+3QtF4JOYspWdehZ2vb/wRd6kFfjA4CEwnEKPDvs+nru4EpbcVRb1yp4DWcmKqxpNuQFYyJj3/Cg+C6G3Vw1wEflLxtzkj3jYglnoFV9+w5/WXOgUB5vItbdTZqqjx+FXvNr3fXqvOCc/7ubzX/+4/wOtNP4wzxqVBS1TUCiUS7xHo2IOlqxIOfRqQAGAvreTPddLjJaJqGHe+1Ms0Sc8MYkTLMs/18j1Rx5qQcjAZctd2MgXXUZOqdhn2cuuz085CSB7LQdsFF+59XmobWpMzhEbFyyuRisrfBaqZYFGXJYVS654wwgIzUKnn41840PNlE4LQHPcMeCvx6oGfjlqGhwt9Px6OllqJUS+6MgneMgL3sOn+qEVbY38hl5GI5Y7Imw5cah2fJemDy4uvGnwJysWFbMYWyZNo9yQtfgEN5u5ty0xvA3/bdOPgRGXreZy7GWsYTQSLuqTeDwel+l0imIcuC35Fnp7+z87TTnKzs4OslO3v2H5DffJxH1vb6/Yixdu16/DKRn//xf2zEsbzTYTQMdy7Gf1XBlYMQNHD+59yPo+vDINTwdN23x065MvfrsSV5WVgRUysLyjWWEKNXRl4NUMJGufckf3QXz2dQlML8m4mzvQZ2CXqKuoMrA2DNTNdm1aURO5jIF46eXp0MvssTbWixhtwPoagc34m/py7CIz9XodGeCxUz0qA+vPwOJ72m95XPeERfuIh2Lv6I6Xp52H9bOv9e9fzVAvM+pRGRgIA/EZGF8n8F7jgBdf3NG2T+sd7UCaV9O0fwF+6pR2bWf0xQAAAABJRU5ErkJggg==" style="width: 217px; height: 6px;"></td>
-                                <td class="content_margin" style="width: 40px;"></td>
-                            </tr>                            <tr>
-                                <td class="content_margin" style="width: 40px;"></td>
-                                <td class="footer_wxcode" style="text-align: center;width: 600px; line-height: 62px; color: #FBE0B5; font-size: 34px; padding-bottom: 65px;"><span>玛丽黛佳品牌内部培训</span></td>
-                                <td class="content_margin" style="width: 40px;"></td>
-                            </tr></tbody>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="centerColumn" style="width: 600px; -premailer-width: 600;border:1px solid #ccc;">
+                    <td class="centerColumn" style="width: 600px; -premailer-width: 600;border:0px solid #ccc;">
                         <table class="iPhone_font" style="font-family: PingFang-SC-Regular, 'Microsoft YaHei', sans-serif, Arial; font-size: inherit; line-height: 18px; padding: 0px; border: 0px;">
                             <tbody><tr>
-                                <td class="content_margin" style="width: 40px;"></td>
-                                <td class="heading_logo" style="text-align: right;width: 600px;"><img width="22" height="26" src="https://statici.icloud.com/emailimages/v4/common/apple_logo_web@2x.png" style="width: 22px; height: 26px;"></td>
-                                <td class="content_margin" style="width: 40px;"></td>
+                                <td class="heading_logo" colspan="3" style="text-align: right;width: 600px;height:316px;"><img  height="316" src="http://192.168.30.165/images/hd_bg.jpg" alt="企业logo" style="height: 316px;" /></td>
                             </tr>
                             <tr>
                                 <td class="content_margin" style="width: 100px;"></td>
@@ -173,21 +147,13 @@
                             <tr>
                                 <td class="content_margin" style="width: 100px;"></td>
                                 <td class="iPhone_font" style="font-family: PingFang-SC-Regular, 'Microsoft YaHei', sans-serif, Arial; line-height: 26px; padding-top: 14px;text-align: left;font-size: 14px; color: #333; font-smooth: always; -webkit-font-smoothing: antialiased;">
-                                    <b>1.请务必按时完成</b>
-                                </td>
-                                <td class="content_margin" style="width: 100px;"></td>
-                            </tr>
-                            <tr>
-                                <td class="content_margin" style="width: 100px;"></td>
-                                <td class="iPhone_font" style="font-family: PingFang-SC-Regular, 'Microsoft YaHei', sans-serif, Arial; line-height: 26px; padding-top: 14px;text-align: left;font-size: 14px; color: #333; font-smooth: always; -webkit-font-smoothing: antialiased;">
-                                    <b>2.请使用微信扫码下方二维码获取LBI培训平台小程序</b>
-                                </td>
-                                <td class="content_margin" style="width: 100px;"></td>
-                            </tr>
-                            <tr>
-                                <td class="content_margin" style="width: 100px;"></td>
-                                <td class="iPhone_font" style="font-family: PingFang-SC-Regular, 'Microsoft YaHei', sans-serif, Arial; height: 70px; padding-top: 14px;text-align: left;font-size: 14px; color: #333; font-smooth: always; -webkit-font-smoothing: antialiased;">
+<pre style="font-family: PingFang-SC-Regular; font-size:14px;">
+<b>1.请务必按时完成</b>
 
+
+<b>2.请使用微信扫码下方二维码获取LBI培训平台小程序：</b>
+
+</pre>
                                 </td>
                                 <td class="content_margin" style="width: 100px;"></td>
                             </tr>
@@ -213,30 +179,8 @@
                             </span>
                     </td>
                 </tr>
-                <tr style="display: none;">
-                    <td class="footer background iPhone_font" colspan="3" background="https://statici.icloud.com/emailimages/v4/common/footer_gradient_web.png" style="font-family: 'Geneva', Helvetica, Arial, sans-serif; font-smooth: always; -webkit-font-smoothing: antialiased; width: 600px; font-size: 11px; line-height: 14px; color: #888; text-align: center; background-repeat: no-repeat; background-position: center top; padding: 15px 0 12px; -webkit-text-size-adjust:100%;" align="center">
-                                  <span class="footer1" style="white-space: nowrap;">
-                                    <a href="https://appleid.apple.com/choose-your-country/" style="color: #08c; text-decoration: none;" rel="noopener" target="_blank">
-                                    Apple ID
-                                  </a>
-                                </span> |
-                        <span class="footer1" style="white-space: nowrap;">
-                                  <a href="https://www.apple.com/support/country/" style="color: #08c; text-decoration: none;" rel="noopener" target="_blank">
-                                  支持
-                                </a>
-                              </span> |
-                        <span class="footer1" style="white-space: nowrap;">
-                              <a href="https://www.apple.com/legal/privacy/szh/" style="color: #08c; text-decoration: none;" rel="noopener" target="_blank">
-                              客户隐私政策
-                            </a>
-                          </span>
-                        <br>
-
-                    </td>
-                </tr>
-                <tr style="display: none;" class="footerBottomPadding iPhone_font" style="line-height: 78px; -premailer-height: 78;padding-top:20px;" height="78"><td style="font-family: 'Microsoft YaHei', sans-serif, Arial, sans-serif;background: #2B2929;font-size: 16px; color: #B9A88B; letter-spacing: 0;">微信扫一扫，获取LBI培训平台小程序</td></tr></tbody>
             </table>
-         </td></tr></tbody>
+        </td></tr></tbody>
     </table>
 </div>
 </body>
